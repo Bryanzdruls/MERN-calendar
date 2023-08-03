@@ -19,6 +19,8 @@
     "express-validator": "^7.0.1",
     "jsonwebtoken": "^9.0.1",
     "moment": "^2.29.4",
-    "mongoose": "^7.4.1"
+    "mongoose": "^7.4.1",
+    "sere": "^0.0.1",
+    "serve": "^14.2.0"
   }
 }
