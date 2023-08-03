@@ -1,0 +1,2 @@
+db_mongo: mern_user
+password: z4jJ9VZrxTnQr3RI
