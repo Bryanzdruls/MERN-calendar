@@ -10,7 +10,7 @@ const app = express();
 dbConnection();
 
 //CORS
-app.use(cors())
+app.use(cors());
 //directorio publico
 app.use( express.static('public') );
 
@@ -20,8 +20,10 @@ app.use( express.json() );
 //Rutasp
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/events', require('./routes/events'));
-//TODO //crud
 
+app.use('*', (req,res) => {
+    res.sendFile(__dirname+'/public/index.html');
+});
 
 
 //Escuchar peticiones
